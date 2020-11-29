@@ -1,0 +1,91 @@
+body {
+  background-color: #556271!important;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Nav Bar */
+.navTitle {
+  font-size: 0.75em;
+}
+
+.navHeader{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navLinks {
+  position: absolute;
+  right: 0;
+  font-size: 0.75em;
+  margin-right: 20px;
+}
+
+/* About Page */
+.aboutImg {
+  display: inline;
+  margin: 0 auto;
+  height: 100%;
+  width: auto;
+}
+
+.imgWrap {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.aboutTitle{
+  color: White;
+  padding: 10px;
+}
+
+.aboutMeContainer {
+  margin: 0 auto;
+}
+
+.bioSection {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  padding: 10px
+}
+
+.cardsSection {
+  padding: 10px
+}
+
+.aboutCard {
+  margin: 0 auto;
+}
+
+.reactIcon {
+  margin: 10px auto;
+  transform: scale(2);
+}
+
+.aboutContainer {
+  margin: 0 auto;
+}
+
+h1, h2, h3 {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 0.75em;
+}
+
+@media only screen and (max-width: 1000px) {
+  
+  .navLinks {
+    position: inherit;
+    text-align: right;
+  }
+
+  .navTitle {
+    display: block;
+  }
+
+  .aboutCard {
+    margin-bottom: 20px
+  }
+
+}
