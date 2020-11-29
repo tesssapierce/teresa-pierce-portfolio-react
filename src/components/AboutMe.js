@@ -1,13 +1,18 @@
 import React from "react"
 import Card from "react-bootstrap/Card"
 import { DiReact } from "react-icons/di";
+import styled, { keyframes } from 'styled-components';
+import { bounce } from 'react-animations';
+
+const Bounce = styled.div`animation: 2s ${keyframes`${bounce}`} infinite`;
 
 const AboutMe = () => {
+
   return (
     <div className="container text-center">
       <div className="row">
         <div className="col-10 aboutContainer">
-          <h3 className="aboutTitle">hello world</h3>
+          <Bounce><h3 className="aboutTitle">hello world</h3></Bounce>
           <div className="imgWrap">
             <img src="/assets/img/Tessa.jpg" className="img-fluid aboutImg" />
           </div>
@@ -16,31 +21,31 @@ const AboutMe = () => {
           </div>
           <div className="row cardsSection">
             <Card className="col-12 col-md-3 aboutCard">
-              <DiReact className="reactIcon"/>
+              <DiReact className="reactIcon" />
               <Card.Body>
                 <Card.Title>Lorem Ipsum</Card.Title>
                 <Card.Text>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </Card.Text>
               </Card.Body>
             </Card>
 
             <Card className="col-12 col-md-3 aboutCard">
-            <DiReact className="reactIcon"/>
+              <DiReact className="reactIcon" />
               <Card.Body>
                 <Card.Title>Lorem Ipsum</Card.Title>
                 <Card.Text>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </Card.Text>
               </Card.Body>
             </Card>
 
             <Card className="col-12 col-md-3 aboutCard">
-            <DiReact className="reactIcon"/>
+              <DiReact className="reactIcon" />
               <Card.Body>
                 <Card.Title>Lorem Ipsum</Card.Title>
                 <Card.Text>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </Card.Text>
               </Card.Body>
             </Card>
