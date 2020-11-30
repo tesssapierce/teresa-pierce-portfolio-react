@@ -1,5 +1,6 @@
 import Homepage from './components/HomePage'
-import React from 'react';
+import React, { useState, useEffect } from "react";
+import {ReactHeight} from 'react-height';
 
 const randRange = (min, max) => Math.random() * (max - min) + min;
 
@@ -24,19 +25,41 @@ const Starfield = ({ width, height, stars, maxSize = 0.75, ...props }) => (
   </svg>
 );
 
-class Application extends React.Component {
-  render() {
-    return <Starfield width={800} height={600} stars={1500} />;
-  }
-}
+const App = () => {
 
-function App() {
+  function useWindowDimensions() {
+    const [width, setWidth] = React.useState(window.innerWidth);
+    const [height, setHeight] = React.useState(document.documentElement.scrollHeight);
+  
+    React.useState(() => {
+      const listener = () => {
+        setWidth(window.innerWidth)
+        setHeight(document.documentElement.scrollHeight)
+      }
+  
+      window.addEventListener('resize', listener);
+  
+      return () => {
+        window.removeEventListener('resize', listener);
+      }
+    })
+  
+    return {
+      width,
+      height,
+    }
+  }
+
+  const { width, height } = useWindowDimensions()
+
+  console.log(height)
+
   return (
     <>
-    <Application />
+    <Starfield width={width} height={height} stars={1000} />
     <Homepage /> 
     </>
   );
-}
+  }
 
 export default App;

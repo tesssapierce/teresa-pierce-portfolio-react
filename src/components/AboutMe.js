@@ -13,7 +13,7 @@ const AboutMe = () => {
     <div className="container text-center" id="aboutme">
       <div className="row">
         <div className="col-10 aboutContainer">
-          <Bounce><h3 className="aboutTitle">hello world</h3></Bounce>
+        <h3 className="aboutTitle">about me</h3>
           <div className="imgWrap">
             <img src="/assets/img/Tessa.jpg" className="img-fluid aboutImg" />
           </div>

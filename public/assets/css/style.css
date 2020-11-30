@@ -4,7 +4,7 @@ body {
     background: #222229 !important;
     margin: 0;
     max-height: 100vh;
-    overflow: hidden;
+    background-repeat: repeat;
 }
 
 /* Nav Bar */
@@ -21,6 +21,20 @@ body {
   right: 0;
   font-size: 0.75em;
   margin-right: 10%;
+}
+
+/* Welcome Page */
+.welcomeContainer {
+  height: 400px;
+  top: 50%;
+}
+
+.welcomeTitle {
+  color: White;
+  padding: 10px;
+  text-align: right;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3.5em;
 }
 
 /* About Page */
