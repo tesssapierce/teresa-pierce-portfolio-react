@@ -2,14 +2,15 @@ import React from "react"
 import Card from "react-bootstrap/Card"
 import { DiReact } from "react-icons/di";
 import styled, { keyframes } from 'styled-components';
-import { bounce } from 'react-animations';
+import { bounce, pulse } from 'react-animations';
+import { SiJavascript, SiNodeDotJs, SiCsswizardry, SiReact, SiAdobephotoshop, SiAdobeindesign, SiAdobedreamweaver, SiAdobelightroomclassic, SiGithub, SiMysql, SiMongodb, SiNpm, SiShopify, SiSalesforce, SiWordpress, SiHeroku } from "react-icons/si";
 
-const Bounce = styled.div`animation: 2s ${keyframes`${bounce}`} infinite`;
+const Bounce = styled.div`animation: 2s ${keyframes`${pulse}`} infinite`;
 
 const AboutMe = () => {
 
   return (
-    <div className="container text-center">
+    <div className="container text-center" id="aboutme">
       <div className="row">
         <div className="col-10 aboutContainer">
           <Bounce><h3 className="aboutTitle">hello world</h3></Bounce>
@@ -17,7 +18,17 @@ const AboutMe = () => {
             <img src="/assets/img/Tessa.jpg" className="img-fluid aboutImg" />
           </div>
           <div className="bioSection">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            <h3>I create web experiences</h3>
+            <p>I am a 27 year old woman living in Arvada, Colorado.  I have 5 years of blended experience across e-commerce, digital marketing, and web development.</p>
+            <p>I graduated from the University of North Texas in 2015 with a B.S. in Digital Retailing and Merchandising.  In 2020, I completed a Full Stack Development Certificate program with the University of Denver.</p>
+            <p>My diverse background includes website management, email and SMS marketing, photography, feed management, and full-stack development.</p>
+          <div>
+            <p className="icons">
+            <SiJavascript /> < SiNodeDotJs /> <SiCsswizardry /> <SiReact /> <SiMysql /> <SiMongodb /> <SiNpm /> <SiGithub /> <SiHeroku /> 
+            </p>
+            <p className="icons"><SiShopify /> <SiSalesforce /> <SiWordpress /> <SiAdobedreamweaver /> <SiAdobephotoshop /> <SiAdobeindesign /> <SiAdobelightroomclassic />
+            </p>
+          </div>
           </div>
         </div>
       </div>

@@ -16,10 +16,20 @@ body {
   position: absolute;
   right: 0;
   font-size: 0.75em;
-  margin-right: 20px;
+  margin-right: 10%;
 }
 
 /* About Page */
+
+.brand {
+  margin-left: 1%;
+}
+
+.icons {
+  margin: 10px auto;
+  transform: scale(2);
+}
+
 .aboutImg {
   display: inline;
   margin: 0 auto;
@@ -37,7 +47,7 @@ body {
   /* animation: fade 0.9s ease-in; */
 }
 
-.aboutTitle{
+.aboutTitle, .portfolioTitle {
   color: White;
   padding: 10px;
   /* animation: fade 0.9s ease-in; */
@@ -65,10 +75,6 @@ body {
   /* animation: fade 0.9s ease-in; */
 }
 
-.aboutCard {
-  /* margin: 5px; */
-}
-
 .reactIcon {
   margin: 10px auto;
   transform: scale(2);
@@ -93,12 +99,29 @@ h1, h2, h3 {
   padding: 10px
 }
 
+.portfolioContainer {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.technologyUsed {
+  color: white;
+  margin: 10px auto;
+  transform: scale(2);
+}
+
 /* Contact Section */
 
 .contactLink {
   margin: 10px;
   transform: scale(2);
   color: white
+}
+
+.contactForm {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.75em;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -114,6 +137,14 @@ h1, h2, h3 {
 
   .aboutCard {
     margin-bottom: 20px
+  }
+
+}
+
+@media only screen and ( min-width: 1300px) {
+  
+  .navLinks {
+    margin-right: 20%
   }
 
 }
