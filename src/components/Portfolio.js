@@ -11,7 +11,7 @@ const Bounce = styled.div`animation: 2s ${keyframes`${pulse}`} infinite`;
 const Portfolio = () => {
 
   return (
-    <div className="container text-center">
+    <div className="container text-center" id="portfolio">
       <div className="row">
         <div className="col-12 portfolioContainer">
           <Bounce><h3 className="portfolioTitle">portfolio</h3></Bounce>

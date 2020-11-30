@@ -23,6 +23,10 @@ body {
   margin-right: 10%;
 }
 
+Nav {
+  scroll-behavior: smooth;
+}
+
 /* Welcome Page */
 .welcomeContainer {
   height: 400px;

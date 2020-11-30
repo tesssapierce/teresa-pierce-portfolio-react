@@ -26,8 +26,10 @@ const Starfield = ({ width, height, stars, maxSize = 0.75, ...props }) => (
 );
 
 const App = () => {
+  let load;
 
   function useWindowDimensions() {
+
     const [width, setWidth] = React.useState(window.innerWidth);
     const [height, setHeight] = React.useState(document.documentElement.scrollHeight);
   
@@ -52,7 +54,11 @@ const App = () => {
 
   const { width, height } = useWindowDimensions()
 
-  console.log(height)
+  useEffect( () => {
+    function updatePageSize(){
+      setWidth(window.innerWidth)
+    }
+  })
 
   return (
     <>

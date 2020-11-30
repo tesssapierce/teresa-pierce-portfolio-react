@@ -11,7 +11,7 @@ const FadeIn = styled.div`animation: 2s ${keyframes`${fadeIn}`};`;
 const Contact = () => {
 
   return (
-    <div className="container">
+    <div className="container" id="contact">
       <div className="row">
         <div className="col-10 aboutContainer">
           <FadeIn><h3 className="aboutTitle text-center">contact me</h3></FadeIn>
