@@ -1,6 +1,10 @@
 body {
-  background-color: #556271!important;
+  /* background-color: #556271!important; */
   font-family: 'Montserrat', sans-serif;
+    background: #222229 !important;
+    margin: 0;
+    max-height: 100vh;
+    overflow: hidden;
 }
 
 /* Nav Bar */
@@ -53,9 +57,15 @@ body {
   /* animation: fade 0.9s ease-in; */
 }
 
-@keyframes fade {
+@keyframes twinkle {
   0% {
-    opacity: 0;
+    opacity: 0.15;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.15;
   }
 }
 

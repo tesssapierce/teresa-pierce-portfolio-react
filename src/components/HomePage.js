@@ -7,14 +7,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const HomePage = () => {
 
-  const [ data, setData ] = useState({})
-
   return (
     <>
-    <Header />
-    <AboutMe />
-    <Portfolio />
-    <Contact />
+      <Header />
+      <AboutMe />
+      <Portfolio />
+      <Contact />
     </>
   )
 
