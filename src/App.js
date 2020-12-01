@@ -54,12 +54,6 @@ const App = () => {
 
   const { width, height } = useWindowDimensions()
 
-  useEffect( () => {
-    function updatePageSize(){
-      setWidth(window.innerWidth)
-    }
-  })
-
   return (
     <>
     <Starfield width={width} height={height} stars={1000} />

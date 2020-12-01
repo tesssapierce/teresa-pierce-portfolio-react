@@ -16,11 +16,11 @@ const Contact = () => {
         <div className="col-10 aboutContainer">
           <FadeIn><h3 className="aboutTitle text-center">contact me</h3></FadeIn>
           <div className="contactLinks text-center">
-            <a href="https://github.com/tesssapierce" target="_blank">
+            <a href="https://github.com/tesssapierce" target="_blank" rel="noreferrer">
             < FaGithub className="contactLink" />
               </a> 
 
-              <a href="https://www.linkedin.com/in/tesssapierce" target="_blank">
+              <a href="https://www.linkedin.com/in/tesssapierce" target="_blank" rel="noreferrer">
               < FaLinkedin className="contactLink"/>
               </a> 
           </div>
